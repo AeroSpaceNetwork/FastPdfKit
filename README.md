@@ -2,7 +2,7 @@
 
 ----
 
-This repository contains the FastPdfKit iOS library with some sample projects.
+This repository contains the FastPdfKit iOS library with some sample projects. 
  
 FastPdfKit is a library that let you show pdf documents in iOS applications bypassing all performances and missing features problems related to QuickLook.
 
