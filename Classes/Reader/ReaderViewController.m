@@ -1264,7 +1264,7 @@
 		
 		// Change direction.
         
-        self.changeDirectionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        /*self.changeDirectionButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.changeDirectionButton.bounds = CGRectMake( 0, 0, 30 , 30 );    
         [self.changeDirectionButton setImage:imgl2r forState:UIControlStateNormal];
         [self.changeDirectionButton addTarget:self action:@selector(actionChangeDirection:) forControlEvents:UIControlEventTouchUpInside];    
@@ -1287,7 +1287,7 @@
         self.changeLeadBarButtonItem = aBarButtonItem;
 		[items addObject:aBarButtonItem];
         
-		[aBarButtonItem release];
+		[aBarButtonItem release];*/
 		
 		// Change mode.
         
@@ -1336,7 +1336,7 @@
 		[aBarButtonItem release];
 		
 		// Text.
-        aButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        /*aButton = [UIButton buttonWithType:UIButtonTypeCustom];
         aButton.bounds = CGRectMake( 0, 0, 34 , 30);
         
         [aButton setImage:self.imgText forState:UIControlStateNormal];
@@ -1347,7 +1347,7 @@
 		self.textBarButtonItem = aBarButtonItem;
         
 		[items addObject:aBarButtonItem];
-		[aBarButtonItem release];
+		[aBarButtonItem release];*/
 		
 		// Outline.
         aButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -1436,7 +1436,7 @@
 		
 		// Change direction.
         
-        self.changeDirectionButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        /*self.changeDirectionButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.changeDirectionButton.bounds = CGRectMake( 0, 0, 24 , 24 );    
         [self.changeDirectionButton setImage:imgl2r forState:UIControlStateNormal];
         [self.changeDirectionButton addTarget:self action:@selector(actionChangeDirection:) forControlEvents:UIControlEventTouchUpInside];    
@@ -1461,7 +1461,7 @@
 		self.changeLeadBarButtonItem = aBarButtonItem;
 		[items addObject:aBarButtonItem];
         
-		[aBarButtonItem release];
+		[aBarButtonItem release];*/
 		
 		// Change mode.
         
@@ -1483,7 +1483,7 @@
         
 		
 		// Text.
-        aButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        /*aButton = [UIButton buttonWithType:UIButtonTypeCustom];
         aButton.bounds = CGRectMake( 0, 0, 25 , 25);
         
         [aButton setImage:self.imgText forState:UIControlStateNormal];
@@ -1495,7 +1495,7 @@
 		self.textBarButtonItem = aBarButtonItem;
         
 		[items addObject:aBarButtonItem];
-		[aBarButtonItem release];
+		[aBarButtonItem release];*/
         
 		
 		// Outline.
@@ -1566,7 +1566,7 @@
     // Defaulting the flags.
     
     pdfOpen = YES;
-	hudHidden = YES;
+	hudHidden = NO;
 	currentReusableView = FPK_REUSABLE_VIEW_NONE;
     multimediaVisible = NO;
     
@@ -1577,6 +1577,12 @@
 	
     [self loadResources];
 	[self prepareToolbar];
+	
+    [self showToolbar];
+    [self showThumbnails];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+
 }
 
 /**
